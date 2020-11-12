@@ -1,9 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/wallpapper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:backgroundTint="#A53535"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main"
+        android:tint="#C1FFFFFF"
+        app:tint="#92012D6C" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="143dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="458dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="    i-Insuarance"
+        android:textColor="#FFC107"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="93dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="416dp"
+        android:text="Dare to Invest"
+        android:textColor="#FFC107" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="507dp"
+        android:text="Home"
+        android:textColor="#FFC107"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="508dp"
+        app:srcCompat="@drawable/bell" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="249dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/life"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_weight="1.0"
+            android:backgroundTint="#26B896"
+            android:text="Life" />
+
+        <Button
+            android:id="@+id/patent"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_weight="1.0"
+            android:backgroundTint="#2F5A50"
+            android:text="Patent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="121dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/website"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_weight="1.0"
+            android:backgroundTint="#C36969"
+            android:text="Website" />
+
+        <Button
+            android:id="@+id/insuarance"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_weight="1.0"
+            android:backgroundTint="#88A63E"
+            android:text="Insuarance" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/agent"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_weight="1.0"
+            android:backgroundTint="#AE66B1"
+            android:text="Agent" />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_weight="1.0"
+            android:backgroundTint="#43A664"
+            android:text="Settings" />
+
+    </LinearLayout>
+
+</RelativeLayout>
