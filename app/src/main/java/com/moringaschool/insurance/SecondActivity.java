@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.insuarance) Button mInsuarance;
     @BindView(R.id.agent) Button mAgent;
     @BindView(R.id.settings) Button mSettings;
+    @BindView(R.id.notification) Button mNotify;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         mInsuarance.setOnClickListener(this);
         mAgent.setOnClickListener(this);
         mSettings.setOnClickListener(this);
+        mNotify.setOnClickListener(this);
 
     }
 
