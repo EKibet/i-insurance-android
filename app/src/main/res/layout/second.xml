@@ -15,7 +15,6 @@
         android:backgroundTint="#A53535"
         android:scaleType="centerCrop"
         android:src="@drawable/main"
-        android:tint="#C1FFFFFF"
         app:tint="#92012D6C" />
 
     <TextView
@@ -69,23 +68,22 @@
 
     <ImageButton
         android:id="@+id/notification"
-        android:layout_width="48dp"
-        android:layout_height="wrap_content"
+        android:layout_width="67dp"
+        android:layout_height="53dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="294dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="578dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="655dp"
         app:srcCompat="@drawable/bell" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="157dp"
+        android:layout_height="272dp"
         android:layout_alignParentEnd="true"
-
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="235dp"
         android:orientation="horizontal">
@@ -130,7 +128,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="148dp"
+        android:layout_height="239dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="121dp"
         android:orientation="horizontal">
@@ -170,8 +168,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
+        android:layout_width="401dp"
+        android:layout_height="197dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="28dp"
         android:orientation="horizontal">

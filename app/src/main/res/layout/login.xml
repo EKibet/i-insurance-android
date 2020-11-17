@@ -77,4 +77,5 @@
             android:text="Log in" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
