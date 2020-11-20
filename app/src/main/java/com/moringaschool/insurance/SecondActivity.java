@@ -21,6 +21,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.settings) Button mSettings;
     @BindView(R.id.notification) Button mNotify;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

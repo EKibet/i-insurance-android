@@ -3,26 +3,30 @@
     package="com.moringaschool.insurance">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
-        android:largeHeap="true"
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Insurance">
+        <activity android:name=".Cover"></activity>
+        <activity android:name=".Personal" />
+        <activity android:name=".Patents" />
         <activity android:name=".ResetActivity" />
         <activity android:name=".ForgetActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".LoginActivity" />
         <activity
-                android:name=".MainActivity"
-                android:label="@string/app_name">
-                <meta-data
-                    android:name="android.support.PARENT_ACTIVITY"
-                    android:value="com.moringaschool.insurance.MainActivity" />
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringaschool.insurance.MainActivity" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

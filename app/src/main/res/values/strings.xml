@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Insurance</string>
+    <string name="life">With our Greenlight Whole Life Assurance Cover, we pay the lump sum of your cover limit to your beneficiaries,
+        in case you pass on either through natural causes or accident.
+    </string>
+    <string name="work">
+        Protect your most important asset, your human capital against accidental loss of life or disability arising out of an accident while on duty or otherwise.
+    </string>
+    <string name="family"> Life Assurance is all about putting your loved ones first. Our cover provides financial refuge in times of hardship and offers stability
+        in their lifestyle, even when you’re gone. </string>
 </resources>
