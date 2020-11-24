@@ -6,8 +6,14 @@ import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -19,7 +25,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.insuarance) Button mInsuarance;
     @BindView(R.id.agent) Button mAgent;
     @BindView(R.id.settings) Button mSettings;
-    @BindView(R.id.notification) Button mNotify;
+    @BindView(R.id.notification) ImageButton mNotify;
 
 
     @Override
@@ -36,6 +42,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         mSettings.setOnClickListener(this);
         mNotify.setOnClickListener(this);
 
+
     }
 
     @Override
@@ -51,11 +58,43 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
             intent.setData(Uri.parse("tel:0712345678"));
             startActivity(intent);
         }
+        if (v == mPatent) {
+            flipIt(v);
+            Intent intent = new Intent(SecondActivity.this, Patents.class);
+            startActivity(intent);
+        }
+        if (v == mLife) {
+            flipIt(v);
+            Intent intent = new Intent(SecondActivity.this, Personal.class);
+            startActivity(intent);
+        }
 
     }
     private void flipIt(final View viewToFlip) {
         ObjectAnimator flip = ObjectAnimator.ofFloat(viewToFlip, "rotationX", 0f, 360f);
         flip.setDuration(500);
         flip.start();
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.logout) {
+            logout();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    private void logout() {
+        Intent intent = new Intent(SecondActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 }

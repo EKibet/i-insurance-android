@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Insurance">
-        <activity android:name=".Cover"></activity>
+        <activity android:name=".ui.PersonalListActivity"></activity>
+        <activity android:name=".Cover" />
         <activity android:name=".Personal" />
         <activity android:name=".Patents" />
         <activity android:name=".ResetActivity" />
