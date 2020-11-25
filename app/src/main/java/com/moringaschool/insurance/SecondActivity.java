@@ -25,6 +25,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.insuarance) Button mInsuarance;
     @BindView(R.id.agent) Button mAgent;
     @BindView(R.id.settings) Button mSettings;
+    @BindView(R.id.eone) Button mEone;
+    @BindView(R.id.etwo) Button mEtwo;
+    @BindView(R.id.ethree) Button mThree;
 
 
     @Override
@@ -39,6 +42,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         mInsuarance.setOnClickListener(this);
         mAgent.setOnClickListener(this);
         mSettings.setOnClickListener(this);
+        mEone.setOnClickListener(this);
+        mThree.setOnClickListener(this);
+        mEtwo.setOnClickListener(this);
 
     }
 
@@ -64,6 +70,21 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
             flipIt(v);
             Intent intent = new Intent(SecondActivity.this, Personal.class);
             startActivity(intent);
+        }
+        if (v == mEone) {
+            flipIt(v);
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+            startActivity(browserIntent);
+        }
+        if (v == mEtwo) {
+            flipIt(v);
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+            startActivity(browserIntent);
+        }
+        if (v == mThree) {
+            flipIt(v);
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+            startActivity(browserIntent);
         }
 
     }

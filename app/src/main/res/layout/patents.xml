@@ -74,7 +74,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
                     android:text="explore"
-                    android:id="@+id/eone"/>
+                    android:id="@+id/exp1"/>
 
 
             </LinearLayout>
@@ -112,7 +112,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="8dp"
                 android:text="Explore"
-                android:id="@+id/etwo"/>
+                android:id="@+id/exp2"/>
 
         </LinearLayout>
 

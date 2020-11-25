@@ -25,7 +25,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="233dp"
+            android:layout_height="265dp"
             android:src="@drawable/fam" />
 
         <TextView
@@ -86,12 +86,12 @@
                         android:layout_width="203dp"
                         android:layout_height="145dp"
                         android:paddingLeft="10dp"
-                        android:text="Work Cover"
+                        android:text="Health Cover"
                         app:cornerRadius="@android:dimen/app_icon_size"
                         app:icon="@drawable/rance"
                         app:iconGravity="textEnd"
-                        app:iconPadding="20dp"
-                        app:iconSize="60dp" />
+                        app:iconPadding="15dp"
+                        app:iconSize="45dp" />
 
                 </LinearLayout>
 
@@ -169,12 +169,12 @@
                 android:layout_height="90dp"
                 android:layout_weight="1.0"
                 android:backgroundTint="#4F4C73"
-                android:text="cOVER"
+                android:text="my documents"
                 android:textStyle="italic"
                 app:cornerRadius="?attr/listPreferredItemHeight"
-                app:icon="@drawable/rance"
+                app:icon="@drawable/documents"
                 app:iconGravity="textEnd"
-                app:iconSize="60dp"
+                app:iconSize="45dp"
                 app:rippleColor="#8A3333"
                 app:strokeColor="#350D0D"
                 tools:visibility="visible" />
