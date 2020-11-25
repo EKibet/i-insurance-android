@@ -25,7 +25,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.insuarance) Button mInsuarance;
     @BindView(R.id.agent) Button mAgent;
     @BindView(R.id.settings) Button mSettings;
-    @BindView(R.id.notification) ImageButton mNotify;
 
 
     @Override
@@ -40,8 +39,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         mInsuarance.setOnClickListener(this);
         mAgent.setOnClickListener(this);
         mSettings.setOnClickListener(this);
-        mNotify.setOnClickListener(this);
-
 
     }
 
